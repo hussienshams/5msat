@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent-container {
+    width: 100%;
+}
+
+.navbar {
+    padding: 0 70px;
+    width: 100%;
+    background-color: #444;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    position: fixed;
+}
+
+.navbar div {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+}
+
+.navbar .nav-child-left img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.navbar a {
+    text-decoration: none !important;
+    font-size: 14px;
+    height: 100%;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    color: white;
+    font-family: 'Noto Sans Arabic', sans-serif;
+}
+
+.navbar a:hover {
+    background-color: rgb(135, 135, 135);
+}
+
+.navbar a i {
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-child-right img {
+    width: 140px;
+    height: 80%;
+    padding: 5px;
+}
+
+.navbar .nav-child-right a i {
+    margin: 0 5px;
+    font-size: 13px;
+}
+
+.navbar .nav-child-right a i.fa-bars {
+    font-size: 23px;
+}
+
+/*end navbar*/
+/*main start*/
+
+main {
+    min-height: 100vh;
+    background-image: url(1600\ x\ 1058\ px.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Noto Sans Arabic', sans-serif;
+    text-align: center;
+
+}
+
+main h3,
+.services h3 {
+    font-size: 35px;
+}
+
+main p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+main .parent-search {
+    position: relative;
+}
+
+main input {
+    width: 650px;
+    height: 65px;
+    padding: 5px 15px;
+    border: none !important;
+    outline: none !important;
+    font-size: 20px;
+
+}
+
+main button {
+    width: 80px;
+    height: 80%;
+    border: none !important;
+    background-color: #52b035;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+
+.services {
+    min-height: 100vh;
+    padding: 50px;
+    width: 100%;
+}
+
+.services h3 {
+    text-align: center;
+    font-family: 'Noto Sans Arabic', sans-serif;
+
+}
+
+.services .parent-services {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.services .parent-services .service {
+    width: 23%;
+    height: 200px;
+    background-image: url(اعمال.jpeg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 100% 100%;
+    margin: 20px auto;
+    position: relative;
+}
+
+.services .parent-services .service-two {
+    background-image: url(برمجه\ و\ تطوير.jpeg);
+}
+
+.services .parent-services .service-three {
+    background-image: url(تسويق.jpeg);
+}
+
+.services .parent-services .service-four {
+    background-image: url(تدريب\ عن\ بعد.jpeg);
+}
+
+.services .parent-services .service-five {
+    background-image: url(تصميم\ فيديو.jpeg);
+}
+
+.services .parent-services .service-six {
+    background-image: url(تصميم.jpeg);
+}
+
+.services .parent-services .service-seven {
+    background-image: url(صوتيات.jpeg);
+}
+
+.services .parent-services .service-eight {
+    background-image: url(كتابه.jpeg);
+}
+
+.services .parent-services .service::after {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.4;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.services .parent-services .service p {
+    font-size: 40px;
+    color: white;
+    z-index: 2;
+}
+
+/*-----------------------------------------------*/
+
+.all_services {
+    width: 100%;
+    padding: 50px 70px 100px;
+    background-color: #f1f1f1;
+}
+
+.all_services .services3 {
+    margin: 20px 0;
+    width: 100%;
+}
+
+.all_services .services3 .titl {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+    font-family: 'Noto Sans Arabic', sans-serif;
+}
+
+.all_services .services3 .titl a {
+    padding: 0px 10px;
+    font-size: 18px;
+    text-decoration: none !important;
+    border: 1px solid #52b035;
+    color: #52b035;
+    transition: 0.3s linear;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -ms-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+}
+
+.all_services .services3 .titl a:hover {
+    background-color: #52b035;
+    color: white;
+}
+
+.all_services .services3 .titl p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.all_services .services3 .items {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.all_services .services3 .items .itme {
+    width: 23%;
+    margin: 20px auto;
+    height: 330px;
+}
+
+.all_services .services3 .items .itme img {
+    width: 100%;
+    height: 60%;
+    cursor: pointer;
+}
+
+.all_services .services3 .items .itme .a {
+    text-decoration: none !important;
+    color: black;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.all_services .services3 .items .itme .a:hover {
+    color: #52b035;
+}
+
+.all_services .services3 .items .itme .p {
+    font-size: 13px;
+    color: #777777;
+    font-family: 'Noto Sans Arabic', sans-serif;
+}
+
+.all_services .services3 .items .itme i {
+    color: #fa9747;
+    font-size: 14px;
+}
+
+.all_services .services3 .items .itme .price {
+    font-size: 14px;
+    font-weight: 700;
+    color: black;
+}
+
+
+.all_services .services3 .items .itme .price span {
+    font-size: 18px;
+}
+
+
+.links {
+    padding: 50px 70px 20px;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links .parent {
+    width: 25%;
+}
+
+.links .parent ul li {
+    list-style-type: none !important;
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: 'Noto Sans Arabic', sans-serif;
+}
+
+.links .parent ul li i {
+    font-size: 35px;
+    background-color: white;
+    padding: 0;
+    color: gray;
+}
+
+.links .parent ul li .fa-facebook {
+    color: #3b5998;
+}
+
+.links .parent ul li .fa-twitter {
+    color: #55acee;
+}
+
+.links .parent ul li .brand {
+    margin-top: 7px;
+}
+
+.links .parent ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #52b035;
+
+}
+
+.m-8 ul li {
+    margin: 0 0 8px !important;
+}
+
+.w-33 {
+    width: 33.33% !important;
+}
+
+.w-16 {
+    width: 16.6% !important;
+    text-decoration: none !important;
+}
+
+/*-----------------------------------------------------------*/
+
+.fo {
+    width: 100%;
+}
+
+.fo .footer-top {
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 22px 80px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Noto Sans Arabic', sans-serif;
+}
+
+.fo .footer-top span {
+    font-size: 13px;
+}
+
+.fo .footer-top a {
+    text-decoration: none !important;
+    color: #444;
+    font-size: 14px;
+    margin: 0px 10px;
+}
+
+.fo .footer-bottom .parent-footter-logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px 20px;
+}
+
+.fo .footer-bottom .parent-footter-logo img {
+    height: 36px;
+}
+
+.links-bottom {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 200px;
+    font-family: 'Noto Sans Arabic', sans-serif;
+}
+
+.links-bottom .itmee {
+    padding: 12px 0px;
+    width: 160px;
+    margin: 10px;
+    
+}
+
+.links-bottom .itmee h2 {
+    font-size: 13px;
+    line-height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links-bottom .itmee a {
+    text-decoration: none !important;
+    color: #777777;
+    font-size: 10px;
+}
